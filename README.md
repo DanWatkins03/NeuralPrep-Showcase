@@ -8,136 +8,235 @@
   <img src="https://img.shields.io/badge/Status-Active%20Development-success?style=flat" />
 </p>
 
-AI-powered cognitive assessment practice platform for modern hiring processes.
-
-Practice numerical reasoning, logical thinking, and behavioural assessments through interactive games designed to mirror real graduate recruitment tests.
+A production assessment-prep platform designed to help candidates improve performance across cognitive, behavioural, and situational hiring assessments.
 
 ---
 
-## Live Demo
+## Live Product
 
-https://www.neuralprep.app  
-
-Experience realistic assessment-style games, mock tests, and performance tracking used in graduate hiring processes.
+https://www.neuralprep.app
 
 ---
 
-## The Problem
+## At a Glance
 
-Modern recruitment processes increasingly rely on cognitive and behavioural assessments.
+- Full-stack SaaS product (not a demo)
+- Real user flows: authentication, subscriptions, persistence
+- Interactive assessment modules (not static quizzes)
+- Personalised feedback and recommendation system
+- Built around a continuous improvement loop:
 
-However:
-- Practice resources are often repetitive or unrealistic  
-- Mock tests rarely reflect real assessment environments  
-- Feedback is limited, making improvement difficult  
-
-As a result, candidates struggle to prepare effectively.
-
----
-
-## The Solution
-
-NeuralPrep provides a modern, interactive platform for assessment preparation:
-
-- Game-based cognitive training  
-- Dynamic mock assessments  
-- Performance tracking with meaningful insights  
-- Fast, responsive web experience  
-
-The focus is on realism, engagement, and measurable improvement.
+Assess → Practise → Improve → Re-test
 
 ---
 
-## Key Features
+## Overview
+
+Modern hiring increasingly relies on assessment-based processes, but most preparation tools are fragmented, unrealistic, or ineffective at guiding improvement.
+
+NeuralPrep addresses this by combining:
+
+- realistic mock assessments for baseline measurement  
+- targeted practice modules for skill development  
+- behavioural and situational simulations  
+- structured performance feedback  
+- recommendation-driven next steps  
+
+The project has evolved into a cohesive product platform with reusable architecture, consistent UX patterns, and ongoing iteration.
+
+---
+
+## Why This Project Stands Out
+
+### Real Product, Not a Demo
+- Live, deployed, and actively developed  
+- Includes full user flows, persistence, gating, and billing  
+- Designed as a complete product experience  
+
+### Full-Stack Ownership
+- Next.js frontend architecture  
+- Supabase-backed data layer  
+- Authentication and subscription flows  
+- Production deployment on Vercel  
+
+### Product-Level Thinking
+Focus extends beyond implementation into:
+- user journeys  
+- improvement loops  
+- free vs Pro strategy  
+- conversion-oriented UX  
+- scalable feature expansion  
+
+### UX and Product Iteration
+Ongoing improvements include:
+- consistent result screens  
+- mobile responsiveness  
+- navigation and discovery  
+- action-first layouts  
+- coaching-style feedback  
+
+---
+
+## Core Features
 
 ### Mock Assessments
-- Timed, multi-section assessments  
-- Randomised questions for each attempt  
-- Simulates real graduate hiring tests  
+Simulates real hiring pressure with:
+- timed multi-section flow  
+- performance breakdowns  
+- strongest and weakest area identification  
+- recommendation-driven next steps  
 
-### Practice Games
-- Numerical reasoning  
-- Logical pattern recognition  
-- Memory and recall challenges  
-- Problem-solving tasks (e.g. river crossing)  
+### Practice Library
+Structured exploration system including:
+- cognitive, behavioural, and situational modules  
+- filtering and discovery  
+- personalised recommendations  
 
-### Performance Analytics
-- Score tracking across attempts  
-- Percentile-based insights  
-- Progress over time  
+### Cognitive Modules
+Custom-built interactive challenges:
+- numerical reasoning  
+- abstract reasoning  
+- number patterns  
+- data sufficiency  
+- attention and memory tasks  
+- flow and logic systems  
 
-### Freemium Model
-- Free tier with core features  
-- Pro tier for advanced analytics and expanded content  
+### Behavioural and Situational Modules
+Expanded beyond typical prep tools:
+- situational judgement tests  
+- behavioural profiling  
+- workplace simulations  
+- inbox simulations  
+
+### Results and Feedback System
+A central part of the product:
+- shared result framework  
+- performance interpretation  
+- actionable next steps  
+- deeper Pro insights  
 
 ---
 
-## Example Games
-
-- Numerical Reasoning  
-- Number Pattern Recognition  
-- Memory Recall  
-- River Crossing Logic Puzzle  
-- Reaction Speed (practice mode)  
-
-Each game targets specific cognitive skills used in real-world assessments.
-
----
-
-## Tech Stack
+## Technical Stack
 
 **Frontend**
 - Next.js (App Router)
 - React
-- TypeScript  
+- TypeScript
 
 **Styling**
-- Tailwind CSS  
+- Tailwind CSS
 
 **Backend**
-- Next.js API routes  
+- Supabase
+- API routes
 
 **Authentication and Billing**
-- Custom authentication flow  
-- Stripe integration  
+- Supabase Auth
+- Stripe
 
 **Deployment**
-- Vercel  
+- Vercel
 
 ---
 
 ## Engineering Highlights
 
-- Dynamic question generation (no static datasets)  
-- Modular game architecture for scalability  
-- Server-side rendering for SEO optimisation  
-- Lightweight performance tracking system  
-- Clean, reusable component structure  
+### Modular Architecture
+Supports multiple module types through shared systems:
+- game logic  
+- access gating  
+- result handling  
+- persistence  
+- UI structure  
 
----
+### Reusable Result Framework
+Standardised across modules:
+- summary  
+- interpretation  
+- next steps  
+- review structure  
 
-## Product Strategy
+Allows different modules to scale in complexity while maintaining consistency.
 
-NeuralPrep is being developed using a continuous improvement approach:
+### Personalised Recommendation System
+Uses user activity to guide progression:
+- weakest areas  
+- follow-up modules  
+- mock retakes  
 
-- Regular feature releases (new games and improvements)  
-- SEO-driven user acquisition strategy  
-- Freemium model balancing accessibility and monetisation  
-- Focus on realistic assessment simulation over simple gamification  
+Transforms the platform into a guided training experience.
 
-The goal is to build a scalable, user-focused platform that genuinely improves performance in recruitment assessments.
+### Responsive Product Design
+Focused on maintaining quality across devices:
+- prioritised key information on mobile  
+- reduced visual clutter  
+- improved interaction patterns  
+
+### SEO as Product Entry
+Landing pages structured as practice hubs:
+- early access to exercises  
+- conversion-focused layout  
+- clear internal linking  
 
 ---
 
 ## Roadmap
 
-- [x] Core game system  
-- [x] Mock assessments  
-- [x] User accounts and tracking  
-- [ ] Advanced analytics dashboard  
-- [ ] Behavioural assessment simulations  
-- [ ] AI-driven personalised training  
-- [ ] Leaderboards and social features  
+The project is actively evolving with a focus on increasing product depth, personalisation, and realism.
+
+### Completed
+- [x] Core platform architecture (Next.js + Supabase + Stripe)
+- [x] Authentication and subscription flows
+- [x] Mock assessment system with multi-section structure
+- [x] Practice library with cognitive, behavioural, and situational modules
+- [x] Modular game/assessment framework
+- [x] Shared result-screen system across modules
+- [x] Personalised recommendations based on user activity
+- [x] SEO-focused landing pages and practice hubs
+- [x] Responsive UI improvements across key flows
+
+### In Progress
+- [ ] Expanding cognitive module set and difficulty scaling
+- [ ] Improving mock assessment variation and composition
+- [ ] Enhancing result interpretation and feedback depth
+- [ ] Refining practice library navigation and discovery
+
+### Planned
+- [ ] Adaptive difficulty based on real-time performance
+- [ ] More advanced workplace simulations with branching outcomes
+- [ ] Long-term progress tracking and performance analytics
+- [ ] Deeper personalised training paths and coaching layer
+- [ ] Employer-specific assessment simulations
+
+---
+
+## Product Screens
+
+### Homepage
+![Homepage](screenshots/homepage.png)
+
+### Practice Library
+![Practice Library](screenshots/practice-library.png)
+
+### Mock Assessment Results
+![Mock Results](screenshots/mock-results.png)
+
+### Workplace Simulation
+![Workplace Simulation](screenshots/workplace-simulation.png)
+
+### Flow Logic Module
+![Flow Logic](screenshots/flow-logic.png)
+
+---
+
+## What This Demonstrates
+
+- Full-stack application development  
+- Scalable architecture for interactive systems  
+- Product-focused UX design  
+- Real-world SaaS considerations  
+- Iteration on a live platform  
 
 ---
 
@@ -145,9 +244,12 @@ The goal is to build a scalable, user-focused platform that genuinely improves p
 
 This repository is a portfolio showcase.
 
-The full source code is private as the platform is actively being developed and deployed as a live product.
+The full production codebase remains private while the product is actively developed.
 
-If you are interested in the technical implementation, feel free to reach out.
+I am happy to discuss:
+- architecture decisions  
+- system design  
+- product strategy  
 
 ---
 
